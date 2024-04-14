@@ -1,11 +1,13 @@
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
-  --color-accent: #dd3400;
-  --color-headings: #1b0760;
-  --color-body: #918ca4;
-  --color-body-darker: #5c5577;
-  --color-border: #ccc;
+  --color-lightest: #fff;
+  --color-darkest: #000;
+  --color-primary: #0ca6d5;
+  --color-secondary: #c0e8f3;
+  --color-accent: #e63b60;
+  --color-headings: #0ca6d5;
+  --color-body: #252525;
+  --color-body-light: #efefef;
+  --color-border: #c0e8f3;
   --border-radius: 5px;
 }
 
@@ -29,4 +31,53 @@ body {
   font-family: Yaldevi, Arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2 {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 4.5rem;
+  color: var(--color-body-light);
+}
+
+h2 {
+  font-size: 4rem;
+  color: var(--color-headings);
+}
+
+h3 {
+  font-size: 3rem;
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 2.7rem;
+  color: var(--color-accent);
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  h4 {
+    font-size: 2.1rem;
+  }
 }
