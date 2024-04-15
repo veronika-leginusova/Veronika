@@ -24,6 +24,7 @@
 }
 
 html {
+  /* 62.5% of 16pc = 10px = 1rem */
   font-size: 62.5%;
 }
 
@@ -79,5 +80,44 @@ p {
 
   h4 {
     font-size: 2.1rem;
+  }
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  color: royalblue;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* .link-arrow::after {
+  content: ">";
+  margin-left: 8px;
+  transition: 0.2s;
+} */
+
+.link-arrow::after {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font: var(--fa-font-solid);
+  content: "\f061";
+  margin-left: 7px;
+  transition: 0.2s;
+  transform: rotate(-45deg);
+}
+
+.link-arrow:hover::after {
+  margin-left: 14px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
   }
 }
