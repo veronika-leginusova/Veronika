@@ -39,6 +39,7 @@ body {
   ); */
   font-family: Yaldevi, Arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
+  font-weight: 200;
   line-height: 1.5;
   color: var(--color-body);
 }
@@ -59,16 +60,20 @@ h2 {
   color: var(--color-headings);
 }
 
+h3,
+h4 {
+  margin: 0;
+}
+
 h3 {
   font-size: 3.5rem;
   font-weight: 600;
   color: var(--color-headings);
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 h4 {
   font-size: 2.7rem;
+  font-weight: 300;
   color: var(--color-accent);
 }
 
@@ -131,6 +136,15 @@ a {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+
+/* Badges */
+.badge {
+  border-radius: var(--border-radius);
+  padding: 0.5rem;
+  font-weight: 500;
+  white-space: nowrap;
+  color: var(--color-body);
 }
 
 /* Lists */
@@ -278,6 +292,10 @@ a {
 .card {
   border-radius: var(--border-radius);
   box-shadow: 2px 2px 3px var(--color-shadow);
+  max-width: 1200px;
+}
+
+.card--projects {
   position: relative;
   overflow: hidden;
   height: 80rem;
@@ -304,5 +322,33 @@ a {
 .card:hover .card__info {
   top: 0;
 }
+
+/* Experience */
+.card--experience {
+  padding: 2rem 4rem;
+  background: var(--color-body-light);
+}
+
+.card__date {
+  border-bottom: 2px solid var(--color-border);
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.card__job {
+  margin-left: 5rem;
+}
+
+.card__name {
+  color: var(--color-accent);
+}
+
+@media screen and (min-width: 1024px) {
+  .card__job {
+    max-width: 90rem;
+    margin-left: auto;
+  }
+}
+
 /* Clip path for the footer
 clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
