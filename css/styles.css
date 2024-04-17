@@ -462,5 +462,45 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+/* Blocks */
+.block {
+  padding: 8rem 2rem;
+  width: 100%;
+}
+
+.block__header {
+  text-align: center;
+}
+
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark .block__heading {
+  color: var(--color-body-light);
+}
+
+.block--dark {
+  background: var(--color-primary-dark);
+  clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  height: var(--height);
+}
+
+.block--dark-border {
+  --height: 50rem;
+  position: relative;
+  background-color: var(--color-secondary);
+  height: calc(var(--height) + 10px);
+  clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
 /* Clip path for the footer
 clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
