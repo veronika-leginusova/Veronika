@@ -9,7 +9,6 @@
   --color-headings: #0ca6d5;
   --color-body: #252525;
   --color-body-light: #f8fdff;
-  --color-border: #c0e8f3;
   --color-shadow: #6464644d;
   --color-shadow-blue: #07648033;
   --border-radius: 5px;
@@ -326,7 +325,7 @@ a {
 }
 
 .card__date {
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-secondary);
   font-weight: 600;
   margin-bottom: 3rem;
 }
@@ -413,5 +412,55 @@ a {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .media {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Skills */
+.skills {
+  box-shadow: 0 4px 4px var(--color-shadow);
+  margin-bottom: 1.5rem;
+  background: var(--color-shadow);
+}
+
+.skill__header {
+  background: var(--color-primary);
+  display: inline-block;
+  text-align: center;
+  color: var(--color-body-light);
+}
+
+.skill__level {
+  display: flex;
+  background: var(--color-secondary);
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+
+.grid--1x2-skills {
+  grid-template-columns: 12rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid--1x4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 /* Clip path for the footer
 clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
