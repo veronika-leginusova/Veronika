@@ -9,7 +9,7 @@
   --color-body: #252525;
   --color-body-light: #efefef;
   --color-border: #c0e8f3;
-  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-shadow: rgba(0, 0, 0, 0.3);
   --border-radius: 5px;
 }
 
@@ -184,4 +184,67 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--border-radius);
+  border: 0;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+  text-align: center;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.btn--white {
+  background: #fff;
+  color: #e63b60;
+  transition: all 0.5s ease;
+}
+
+.btn--white:hover {
+  background: var(--color-accent);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(192, 0, 42, 1) 50%,
+    rgba(230, 59, 96, 1) 100%
+  );
+  color: var(--color-lightest);
+}
+
+.btn--accent-gradient {
+  background: var(--color-accent);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(192, 0, 42, 1) 50%,
+    rgba(230, 59, 96, 1) 100%
+  );
+  color: var(--color-lightest);
+  transition: all 0.5s ease;
+}
+
+.btn--accent-gradient:hover {
+  background: var(--color-lightest);
+  color: var(--color-accent);
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+
+.inset-shadow {
+  box-shadow: inset 0 4px 10px var(--color-shadow);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
