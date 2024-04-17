@@ -7,7 +7,7 @@
   --color-accent: #e63b60;
   --color-headings: #0ca6d5;
   --color-body: #252525;
-  --color-body-light: #efefef;
+  --color-body-light: #dedede;
   --color-border: #c0e8f3;
   --color-shadow: rgba(0, 0, 0, 0.3);
   --border-radius: 5px;
@@ -31,6 +31,7 @@ html {
 }
 
 body {
+  background: var(--color-primary-dark);
   /* background: repeating-linear-gradient(
     0,
     #fff 0%,
@@ -248,3 +249,28 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/* Inputs */
+.input {
+  background: var(--color-shadow);
+  border-radius: var(--border-radius);
+  border: 0;
+  color: var(--color-body-light);
+  font-size: 2rem;
+  outline: 0;
+  padding: 2rem;
+  resize: none;
+}
+
+::placeholder {
+  color: #dedede7e;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+/* Clip path for the footer
+clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
