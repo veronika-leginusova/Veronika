@@ -9,6 +9,7 @@
   --color-body: #252525;
   --color-body-light: #efefef;
   --color-border: #c0e8f3;
+  --color-shadow: rgba(0, 0, 0, 0.4);
   --border-radius: 5px;
 }
 
@@ -96,7 +97,7 @@ a {
 }
 
 .link-arrow {
-  color: royalblue;
+  color: var(--color-body-light);
   text-transform: capitalize;
   font-size: 2rem;
   font-weight: 700;
@@ -155,4 +156,32 @@ a {
   .list--circle .list__item {
     padding-left: 0;
   }
+}
+
+/* Icons */
+.icon {
+  width: 45px;
+  height: 45px;
+  fill: var(--color-darkest);
+  filter: drop-shadow(2px 2px 3px var(--color-shadow));
+}
+
+.icon-container {
+  width: 90px;
+  height: 90px;
+  background: var(--color-primary);
+  border-radius: var(--border-radius);
+  clip-path: polygon(
+    50% 0%,
+    85.35% 14.65%,
+    100% 50%,
+    85.35% 85.35%,
+    50% 100%,
+    14.65% 85.35%,
+    0% 50%,
+    14.65% 14.65%
+  );
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
