@@ -2,6 +2,7 @@
   --color-lightest: #fff;
   --color-darkest: #000;
   --color-primary: #0ca6d5;
+  --color-primary-opaque: #0ca6d5cc;
   --color-primary-dark: #076480;
   --color-secondary: #c0e8f3;
   --color-accent: #e63b60;
@@ -84,7 +85,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h1 {
@@ -343,6 +344,73 @@ a {
     max-width: 90rem;
     margin-left: auto;
   }
+}
+
+/* Education */
+.card--education {
+  color: var(--color-body-light);
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.education__header {
+  border-radius: var(--border-radius);
+  text-align: end;
+  width: 100%;
+  background: var(--color-primary-opaque);
+  position: absolute;
+  bottom: 25.5rem;
+}
+
+.education__heading {
+  color: var(--color-body-light);
+}
+
+.education__header .card__date {
+  border-bottom: none;
+  font-weight: 300;
+}
+
+.education__header .card__date,
+.education__heading {
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.education__info {
+  background: var(--color-primary);
+  padding: 0.5rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .card__date {
+    font-size: 2.4rem;
+  }
+
+  .education__header {
+    bottom: 21.5rem;
+  }
+}
+
+/* Media */
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__heading {
+  font-size: 2.8rem;
+  color: var(--color-body);
+}
+
+.media__text,
+.media__heading {
+  margin-bottom: 0;
 }
 
 /* Clip path for the footer
