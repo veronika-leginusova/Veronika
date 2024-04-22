@@ -176,7 +176,7 @@ a {
   width: 45px;
   height: 45px;
   fill: var(--color-darkest);
-  filter: drop-shadow(2px 2px 3px var(--color-shadow));
+  filter: drop-shadow(2px 2px 3px var(--color-body));
 }
 
 .icon-container {
@@ -197,6 +197,35 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Logo */
+.logo--white {
+  height: 35px;
+  fill: var(--color-lightest);
+  filter: drop-shadow(2px 2px 4px #00000080);
+}
+
+.logo--gradient {
+  height: 100px;
+  filter: drop-shadow(2px 2px 4px #00000080);
+  fill: url(#gradient--accent);
+}
+
+.stop1 {
+  stop-color: #ffffff;
+}
+.stop2 {
+  stop-color: #e63b60;
+}
+.stop3 {
+  stop-color: #510c1b;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo--gradient {
+    height: 200px;
+  }
 }
 
 /* Buttons */
