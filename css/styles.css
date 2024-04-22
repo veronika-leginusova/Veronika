@@ -204,6 +204,7 @@ a {
   height: 35px;
   fill: var(--color-lightest);
   filter: drop-shadow(2px 2px 4px #00000080);
+  margin-top: 3px;
 }
 
 .logo--gradient {
@@ -531,5 +532,80 @@ a {
   max-width: 1140px;
   margin: 0 auto;
 }
-/* Clip path for the footer
-clip-path: polygon(0% 0%, 50% 10%, 100% 0%, 100% 100%, 50% 90%, 0% 100%); */
+
+/* Collapsibles */
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Navigation Bar */
+.nav {
+  background: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2px 1rem;
+}
+
+#menu {
+  fill: var(--color-primary-dark);
+  transition: 0.3s;
+  height: 40px;
+  width: 40px;
+}
+
+.nav__list {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-weight: 400;
+}
+.nav__item {
+  padding: 0.3rem 2rem;
+}
+
+.nav__item > a {
+  color: var(--color-primary-dark);
+  transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+  color: var(--color-primary);
+}
+
+.nav__toggler {
+  opacity: 0.6;
+}
+
+.collapsible--expanded #menu {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    display: none;
+  }
+
+  .nav {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+
+  .nav__list {
+    display: flex;
+    width: auto;
+    max-height: 100%;
+    opacity: 1;
+    font-size: 1.8rem;
+  }
+}
