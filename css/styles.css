@@ -1,6 +1,7 @@
 :root {
   --color-lightest: #fff;
   --color-darkest: #000;
+  --color-darkest-opaque: #00000066;
   --color-primary: #0ca6d5;
   --color-primary-opaque: #0ca6d5cc;
   --color-primary-dark: #076480;
@@ -294,7 +295,7 @@ a {
 
 /* Inputs */
 .input {
-  background: var(--color-shadow);
+  background: var(--color-darkest-opaque);
   border-radius: var(--border-radius);
   border: 0;
   color: var(--color-body-light);
@@ -302,6 +303,8 @@ a {
   outline: 0;
   padding: 2rem;
   resize: none;
+  margin: 0.2rem;
+  width: 100%;
 }
 
 ::placeholder {
@@ -545,7 +548,7 @@ a {
 }
 
 .block--dark-border {
-  --height: 50rem;
+  --height: 80rem;
   position: relative;
   background-color: var(--color-secondary);
   height: calc(var(--height) + 10px);
@@ -642,7 +645,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 3rem;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .hero__text {
@@ -659,6 +662,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .block--hero-border {
+    --height: 80rem;
+  }
+
   .hero__text {
     font-size: 4rem;
   }
@@ -666,4 +673,27 @@ a {
   .hero__content .btn {
     font-size: 2rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  .block--hero-border {
+    --height: 120rem;
+  }
+}
+
+/* Footer */
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 60rem;
+  height: calc(var(--height) - 175px);
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+.footer__contact .btn {
+  align-self: flex-end;
+  margin-top: 0.2rem;
 }
