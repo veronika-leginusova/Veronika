@@ -177,7 +177,7 @@ a {
   width: 45px;
   height: 45px;
   fill: var(--color-darkest);
-  filter: drop-shadow(2px 2px 3px var(--color-body));
+  filter: drop-shadow(2px 2px 3px var(--color-darkest-opaque));
 }
 
 .icon-container {
@@ -281,6 +281,10 @@ a {
 .btn--block {
   width: 20rem;
   display: inline-block;
+}
+
+.btn--small {
+  width: 15rem;
 }
 
 .inset-shadow {
@@ -548,7 +552,7 @@ a {
 }
 
 .block--dark-border {
-  --height: 80rem;
+  --height: 90rem;
   position: relative;
   background-color: var(--color-secondary);
   height: calc(var(--height) + 10px);
@@ -688,7 +692,7 @@ a {
   align-items: center;
   justify-content: center;
   max-width: 60rem;
-  height: calc(var(--height) - 175px);
+  height: calc(var(--height) - 150px);
   padding: 0 3rem;
   margin: 0 auto;
 }
@@ -696,4 +700,34 @@ a {
 .footer__contact .btn {
   align-self: flex-end;
   margin-top: 0.2rem;
+}
+
+.email {
+  color: var(--color-lightest);
+  text-decoration: underline;
+  margin: 2rem 0 1rem;
+}
+
+.grid--social-media {
+  grid-template-columns: repeat(4, 1fr);
+  margin: 4rem;
+  gap: 2rem;
+}
+
+.footer {
+  position: relative;
+  width: 100vw;
+}
+
+.top {
+  width: 4rem;
+  height: 5rem;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding: 1.5rem 0 1rem;
+  transform: translate(50%, 50%);
+  position: absolute;
+  right: 50vw;
+  top: 84%;
 }
