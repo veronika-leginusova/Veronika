@@ -60,6 +60,8 @@ h2 {
   font-size: 4rem;
   font-weight: 600;
   color: var(--color-headings);
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 h3,
@@ -433,6 +435,8 @@ a {
 .media {
   display: flex;
   align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 .media__body {
@@ -457,6 +461,10 @@ a {
 }
 
 /* Skills */
+.skills-container {
+  margin: 3rem 1rem;
+}
+
 .skills {
   box-shadow: 0 4px 4px var(--color-shadow);
   margin-bottom: 1.5rem;
@@ -495,8 +503,8 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .grid--1x4 {
-    grid-template-columns: repeat(4, 1fr);
+  .grid--auto {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
 
@@ -567,6 +575,13 @@ a {
   margin: 0 auto;
 }
 
+.container--vh {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* Collapsibles */
 .collapsible__content {
   max-height: 0;
@@ -588,6 +603,7 @@ a {
   align-items: center;
   flex-wrap: wrap;
   padding: 2px 1rem;
+  border-radius: var(--border-radius);
 }
 
 #menu {
@@ -720,14 +736,14 @@ a {
 }
 
 .top {
-  width: 4rem;
-  height: 5rem;
-  text-align: center;
   font-weight: 700;
+  height: 5rem;
   margin: 0;
   padding: 1.5rem 0 1rem;
-  transform: translate(50%, 50%);
   position: absolute;
   right: 50vw;
+  text-align: center;
   top: 84%;
+  transform: translate(50%, 50%);
+  width: 4rem;
 }
