@@ -33,12 +33,12 @@ html {
 }
 
 body {
-  /* background: repeating-linear-gradient(
+  background: repeating-linear-gradient(
     0,
     #fff 0%,
     rgba(192, 232, 243, 0.5) 20%,
     #fff 40%
-  ); */
+  );
   font-family: Yaldevi, Arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
   font-weight: 200;
@@ -70,13 +70,13 @@ h4 {
 }
 
 h3 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 600;
   color: var(--color-headings);
 }
 
 h4 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-weight: 400;
   color: var(--color-accent);
 }
@@ -137,7 +137,7 @@ a {
 /* Badges */
 .badge {
   border-radius: var(--border-radius);
-  padding: 0.5rem 1.5rem;
+  padding: 0 1.5rem;
   font-weight: 500;
   white-space: nowrap;
   border: 1px solid var(--color-body-light);
@@ -324,6 +324,10 @@ a {
 }
 
 /* Projects card */
+.projects {
+  margin: 1.5rem;
+}
+
 .card {
   border-radius: var(--border-radius);
   box-shadow: 2px 2px 3px var(--color-shadow);
@@ -332,7 +336,8 @@ a {
 .card--projects {
   position: relative;
   overflow: hidden;
-  height: 50rem;
+  height: 40rem;
+  margin: 0.5rem;
 }
 
 .card__img,
@@ -346,7 +351,7 @@ a {
 }
 
 .card__info {
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
   top: 85%;
@@ -357,10 +362,18 @@ a {
   top: 0;
 }
 
+.btn--project {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* Experience */
 .card--experience {
   padding: 2rem 4rem;
   background: var(--color-body-light);
+  margin: 0.5rem;
+  border-radius: var(--border-radius);
 }
 
 .card__date {
