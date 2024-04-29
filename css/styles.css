@@ -37,8 +37,8 @@ body {
   background: repeating-linear-gradient(
     0,
     #fff 0%,
-    rgba(192, 232, 243, 0.5) 20%,
-    #fff 40%
+    rgba(192, 232, 243, 0.8) 5%,
+    #fff 20%
   );
   font-family: Yaldevi, Arial, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -181,6 +181,7 @@ a {
   height: 45px;
   fill: var(--color-darkest);
   filter: drop-shadow(2px 2px 3px var(--color-darkest-opaque));
+  cursor: pointer;
 }
 
 .icon-container {
