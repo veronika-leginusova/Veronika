@@ -3,10 +3,11 @@
   --color-darkest: #000;
   --color-darkest-opaque: #00000066;
   --color-primary: #0ca6d5;
-  --color-primary-opaque: #0ca6d5cc;
+  --color-primary-opaque: #0ca6d599;
   --color-primary-dark: #076480;
   --color-secondary: #c0e8f3;
   --color-accent: #e63b60;
+  --color-accent-opaque: #e63b6099;
   --color-headings: #0ca6d5;
   --color-body: #252525;
   --color-body-light: #f8fdff;
@@ -398,11 +399,21 @@ a {
 }
 
 /* Education */
+.grid--education {
+  gap: 0.5rem;
+}
+
 .card--education {
   color: var(--color-body-light);
   position: relative;
   border-radius: var(--border-radius);
   overflow: hidden;
+}
+
+.education__img {
+  width: 100%;
+  max-height: 40rem;
+  object-fit: cover;
 }
 
 .education__header {
@@ -414,19 +425,21 @@ a {
   bottom: 25.5rem;
 }
 
+.education__header-accent {
+  background: var(--color-accent-opaque);
+}
+
 .education__heading {
   color: var(--color-body-light);
+  padding: 1rem 2rem;
+  margin: 0;
 }
 
 .education__header .card__date {
   border-bottom: none;
   font-weight: 300;
-}
-
-.education__header .card__date,
-.education__heading {
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
 }
 
 .education__info {
@@ -434,13 +447,25 @@ a {
   padding: 0.5rem 3rem;
 }
 
+.education__info-accent {
+  background: var(--color-accent);
+}
+
 @media screen and (min-width: 1024px) {
   .card__date {
-    font-size: 2.4rem;
+    font-size: 1.7rem;
+  }
+
+  .education__heading {
+    font-size: 2rem;
+  }
+
+  .education__info {
+    font-size: 1.7rem;
   }
 
   .education__header {
-    bottom: 21.5rem;
+    bottom: 18.5rem;
   }
 }
 
