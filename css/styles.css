@@ -368,7 +368,7 @@ a {
 
 /* Experience */
 .card--experience {
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 3rem;
   background: var(--color-body-light);
   margin: 0.5rem;
   border-radius: var(--border-radius);
@@ -772,7 +772,7 @@ a {
 }
 
 .grid--social-media {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 4rem;
   gap: 2rem;
 }
