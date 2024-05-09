@@ -505,6 +505,7 @@ a {
   display: inline-block;
   text-align: center;
   color: var(--color-body-light);
+  font-size: 1.8rem;
 }
 
 .skill__level {
@@ -518,7 +519,7 @@ a {
 }
 
 .grid--1x2-skills {
-  grid-template-columns: 12rem auto;
+  grid-template-columns: 15rem auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -584,7 +585,7 @@ a {
   height: calc(var(--height) + 5px);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 90%, 0% 100%);
   display: flex;
-  align-items: top;
+  align-items: start;
   justify-content: center;
 }
 
